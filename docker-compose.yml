@@ -15,9 +15,10 @@ services:
   app:
     depends_on:
       - mysqldb
-    build: .
+#    build: .
+    image: mainproduct2:latest
     restart: on-failure
-    env_file: /Users/tejakumar.kalimera/Downloads/product-management/.env
+    env_file: ./.env
     ports:
       - ${SPRING_LOCAL_PORT}:${SPRING_DOCKER_PORT}
     environment:
