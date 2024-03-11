@@ -15,7 +15,6 @@ services:
   app:
     depends_on:
       - mysqldb
-#    build: .
     image: mainproduct2:latest
     restart: on-failure
     env_file: ./.env
