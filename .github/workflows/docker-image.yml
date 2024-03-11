@@ -18,7 +18,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker Image
-        run: docker build -t mainproduct2:latest  .
+        run: docker build -t mainproduct2:latest ./product-management/.
 
       - name: Push Docker Image
         run: docker push mainproduct2:latest
