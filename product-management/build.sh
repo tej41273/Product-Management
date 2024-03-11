@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ./product-management/
+#cd ./product-management/
 
 # Creating the jar file
 #mvn clean install
