@@ -18,7 +18,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker Image
-        run: /Users/tejakumar.kalimera/Downloads/Product-Management-Main/product-management/build.sh
+        run: product-management/build.sh
 
       - name: Push Docker Image
         run: docker push mainproduct2:latest
