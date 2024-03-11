@@ -27,4 +27,6 @@ jobs:
 #        run: product-management/build.sh
 
       - name: Push Docker Image
-        run: docker push mainproduct2:latest
+        run: |
+          docker tag mainproduct2 teja41273/product-management1:latest
+          docker push teja41273/product-management1:latest
