@@ -17,6 +17,11 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
+      - name: print current directory
+        run: |
+            pwd
+            ls -al
+
       - name: Build Docker Image
         run: docker build -t mainproduct2:latest ./product-management
 
