@@ -32,7 +32,6 @@ jobs:
       - name: Build Docker Image
         run: |
           cd ./product-management
-          mvn clean install
           docker build -t mainproduct2:latest .
 
       - name: Push Docker Image
